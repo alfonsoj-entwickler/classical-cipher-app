@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
-import CeaserProvider from "@/context/CeaserProvider";
+import ClassicalProvider from "@/context/ClassicalProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { SITE_URL } from "@/helpers/site";
@@ -97,7 +97,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`bg-special ${roboto.className}`}>
-        <CeaserProvider>
+        <ClassicalProvider>
           <header className="absolute top-4 right-4 z-10">
             <a
               className="p-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
@@ -128,7 +128,7 @@ export default function RootLayout({
               pauseOnHover
             />
           </div>
-        </CeaserProvider>
+        </ClassicalProvider>
       </body>
     </html>
   );
