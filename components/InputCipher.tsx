@@ -1,7 +1,7 @@
 "use client";
 import useClassical from "@/hooks/useClassical";
 import { CIPHERS, CipherId } from "@/helpers/ciphers/types";
-import CaesarParams from "@/components/cipher-params/CaesarParams";
+import ClassicalParams from "@/components/cipher-params/ClassicalParams";
 import VigenereParams from "@/components/cipher-params/VigenereParams";
 import PlayfairParams from "@/components/cipher-params/PlayfairParams";
 import AffineParams from "@/components/cipher-params/AffineParams";
@@ -19,7 +19,7 @@ import OtpParams from "@/components/cipher-params/OtpParams";
 // Params UI shown below the select for each implemented cipher. A cipher with
 // no entry here (or `implemented: false` in CIPHERS) shows no params yet.
 const CIPHER_PARAMS: Partial<Record<CipherId, () => JSX.Element>> = {
-  caesar: CaesarParams,
+  caesar: ClassicalParams,
   vigenere: VigenereParams,
   playfair: PlayfairParams,
   affine: AffineParams,
