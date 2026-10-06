@@ -13,7 +13,7 @@ const PlaintTextArea = () => {
   } = useClassical();
 
   return (
-    <div className="flex flex-col w-full md:w-2/3 lg:w-2/5 h-full min-h-[18rem]">
+    <div className="flex flex-col w-full md:w-2/3 lg:w-2/5 h-full">
       <div className="h-16 flex justify-between items-center gap-4 px-4 bg-gray-400/80 rounded-t-lg">
         <span className="text-xs text-slate-900 font-mono" aria-hidden="true">
           {ciphertext.length}/{MAX_TEXT}

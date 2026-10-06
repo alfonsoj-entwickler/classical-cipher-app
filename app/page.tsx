@@ -44,7 +44,7 @@ export default function Home() {
         Caesar, Vigenère, Playfair, Hill, Enigma and more. Pick a cipher, type
         in either panel, and watch the transformation update live.
       </p>
-      <div className="h-full w-full flex flex-col lg:flex-row items-stretch lg:items-center gap-4">
+      <div className="h-full md:h-[65vh] lg:h-[55vh] w-full flex flex-col lg:flex-row items-stretch lg:items-center gap-4">
         <CipherTextArea />
         <div className="w-full sm:h-full md:w-2/3 lg:w-1/4 min-w-[15rem] my-4 lg:my-0">
           <InputCipher />
