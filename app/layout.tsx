@@ -62,7 +62,7 @@ const jsonLd = {
   "@type": "WebApplication",
   name: "Classical Cipher App",
   url: SITE_URL,
-  image: `${SITE_URL}/opengraph-image.jpg`,
+  image: `${SITE_URL}/opengraph-image`,
   applicationCategory: "UtilitiesApplication",
   operatingSystem: "All",
   browserRequirements: "Requires JavaScript",
